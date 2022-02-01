@@ -1,5 +1,5 @@
 {
-	"allowedOrigins": [], // CORS
+	"allowedOrigins": ["*"], // CORS
 	"blacklistedDomains": [],
 	"deproxifyURLs": false, // Automatically try deproxified versions of URLs
 	"identifierSearchLambda": "", // Identifier search Lambda function for text search
