@@ -32,6 +32,10 @@ const _ = require('koa-route');
 const bodyParser = require('koa-bodyparser');
 const cors = require('./cors');
 
+if (config.get('nodeIgnoreTLS')) {
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+}
+
 // Prevent UnhandledPromiseRejection crash in Node 15, though this shouldn't be necessary
 process.on('unhandledRejection', (reason, promise) => {
 	Zotero.debug('Unhandled rejection: ' + (reason.stack || reason), 1)

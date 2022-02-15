@@ -1,4 +1,5 @@
 {
+	"nodeIgnoreTLS": true,
 	"allowedOrigins": ["*"], // CORS
 	"blacklistedDomains": [],
 	"deproxifyURLs": false, // Automatically try deproxified versions of URLs
